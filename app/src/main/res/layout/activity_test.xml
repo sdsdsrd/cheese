@@ -1,0 +1,2227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/progress"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-120dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/a_scenario"
+                android:text="당신의 취향을 알려주세요"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-92dp"
+                    android:background="@drawable/dot" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/orange_circle"
+                    android:layout_marginLeft="-143dp"/>
+
+
+                <RelativeLayout
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/white_box">
+
+                    <TextView
+                        android:id="@+id/question1"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="8dp"
+                        android:text="1. 나는 집순이, 집돌이 이다"
+                        android:textSize="25dp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/question1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_line"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton1_1"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:background="@drawable/radiobutton1"
+                            android:button="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton1_2"
+                            android:layout_width="30dp"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="18dp"
+                            android:background="@drawable/radiobutton2"
+                            android:button="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton1_3"
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:layout_marginLeft="18dp"
+                            android:background="@drawable/radiobutton3"
+                            android:button="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton1_4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="18dp"
+                            android:background="@drawable/radiobutton4"
+                            android:button="@android:color/white" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton1_5"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_marginLeft="18dp"
+                            android:background="@drawable/radiobutton5"
+                            android:button="@android:color/white" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioGroup1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:gravity="center"
+                        android:text="매우 그렇지 않다"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioGroup1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="280dp"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:gravity="center"
+                        android:text="매우 그렇다"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/number1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radioGroup1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/a_scenario"
+                            android:text="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:fontFamily="@font/a_scenario"
+                            android:text="2"
+                            android:textColor="@android:color/black"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="39dp"
+                            android:fontFamily="@font/a_scenario"
+                            android:text="3"
+                            android:textColor="@android:color/black"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="39dp"
+                            android:fontFamily="@font/a_scenario"
+                            android:text="4"
+                            android:textColor="@android:color/black"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45dp"
+                            android:fontFamily="@font/a_scenario"
+                            android:text="5"
+                            android:textColor="@android:color/black"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/selectedNum1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/number1"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@android:color/transparent" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="2. 혼자 하는 운동(필라테스, 헬스) 보다 같이 하는 운동(축구, 배드민턴)이 좋다"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number2"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-145dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="3. 나는 페스티벌, 클럽과 같은 하이텐션의 분위기를 즐긴다"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton3_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number3"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="4. 나는 요리하는 것을 좋아한다"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton4_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number4"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="5. 집과 업무 환경이 잘 정돈 되어 있다"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton5_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number5"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question6"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="6. 나는 자기 개발을 위한 스터디를 주기적으로 참여하고 있다. (예: 영어 회화 스터디/주식 투자 스터디)"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton6_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton6_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton6_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton6_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton6_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number6"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question7"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="7. 나는 템포가 느린음악보다 빠른 음악이 더 좋다"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton7_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton7_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton7_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton7_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton7_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number7"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question8"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="8. 취향 저격 취미를 찾는다면 5만원 이상 돈을 지불할 의사가 있다"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton8_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number8"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question9"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="9. 나는 컴퓨터 게임을 하는 것을 좋아한다"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton9_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="54dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number9"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question10"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="10. 나는 쇼핑을 즐긴다(온라인, 오프라인 쇼핑 다 포함)"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton10_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton10_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton10_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton10_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton10_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number10"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question11"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="11. 한 달 동안 영화관에서 영화보는\n빈도"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question11"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton11_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton11_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton11_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton11_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton11_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup11"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number11"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-92dp"
+                android:background="@drawable/dot" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/orange_circle"
+                android:layout_marginLeft="-143dp"/>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question12"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="12. 이성친구 매칭어플에 관심이 많다"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question12"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton12_1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/radiobutton1"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton12_2"
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton2"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton12_3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton3"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton12_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton4"
+                        android:button="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton12_5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/radiobutton5"
+                        android:button="@android:color/white" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup12"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇지 않다"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup12"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/a_scenario"
+                    android:gravity="center"
+                    android:text="매우 그렇다"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/number12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup12"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:fontFamily="@font/a_scenario"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        android:textSize="22dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/selectedNum12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number12"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/transparent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="0 %"
+            android:textSize="35dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/a_scenario"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="#FFFEEC81"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/start"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_box">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/blue_circle1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@drawable/blue_circle2"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:fontFamily="@font/a_scenario"/>
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="번호"
+        android:textSize="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="355dp"
+        android:fontFamily="@font/a_scenario"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/moneyButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/money_button"
+            android:layout_marginRight="34dp"/>
+
+        <Button
+            android:id="@+id/messageButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/message_button"
+            android:layout_marginRight="34dp"/>
+
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/telephone_button"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
